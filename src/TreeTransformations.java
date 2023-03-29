@@ -39,7 +39,7 @@ public class TreeTransformations {
             String line;
             while ((line = br.readLine()) != null) {
                 if (line.trim().isEmpty()) continue;
-                String[] edges = line.trim().split("\\s*\\]\\s*");
+                String[] edges = line.trim().split("\\s*]\\s*");
                 for (String edge : edges) {
                     String[] nodes = edge.substring(1).split(", ");
                     int parentId = Integer.parseInt(nodes[0]);
